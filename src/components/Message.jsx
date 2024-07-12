@@ -22,7 +22,7 @@ function Message({ className }) {
           width={40}
           />
       </div>
-      <div className="flex justify-end items-center space-y-3 w-8/12 min-w-80 ">
+      <div className="flex justify-end items-center space-y-3 sm:w-8/12 w-10/12">
         <p className=" text-sm p-2 max-w-max text-white bg-gray-500/10 rounded-s-lg rounded-ee-lg font-semibold">
            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo recusandae possimus incidunt excepturi quos earum. Amet consequuntur voluptatem provident expedita eius neque modi reprehenderit veniam dolorum dolores, commodi libero saepe?  
         </p>
@@ -39,7 +39,7 @@ function Message({ className }) {
           width={40}
           />
       </div>
-      <div className="flex items-center space-y-3 w-8/12 min-w-80 ">
+      <div className="flex items-center space-y-3 sm:w-8/12 w-10/12 ">
         <p className=" text-sm p-2 max-w-max text-white bg-gray-500/10 rounded-es-lg rounded-e-lg font-semibold">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim deleniti unde, cupiditate tempore molestiae ullam illum fugiat, amet numquam saepe, nemo magni soluta adipisci quo aliquam in id nulla! Totam!
         </p>
