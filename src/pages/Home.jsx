@@ -6,7 +6,7 @@ function Home() {
     <div className="h-full flex">
        <SideBar className="md:block hidden w-3/12" />
 
-      <Chat className=" flex-grow max-h-screen h-full" />
+      <Chat className=" flex-grow h-full" />
     </div>
   );
 }
