@@ -8,7 +8,7 @@ function Chats() {
     },
   ]);
   return (
-    <div className="w-full flex flex-col justify-center gap-2">
+    <div className="w-full flex flex-col justify-center gap-2 cursor-pointer">
       {chats.map((chat) => (
         <div
           key={chat.name}
