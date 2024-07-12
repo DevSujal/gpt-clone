@@ -3,10 +3,10 @@ import { Chat, SideBar } from "../components";
 
 function Home() {
   return (
-    <div className="h-screen flex">
+    <div className="h-full flex">
        <SideBar className="md:block hidden w-3/12" />
 
-      <Chat className=" flex-grow h-screen" />
+      <Chat className=" flex-grow max-h-screen h-full" />
     </div>
   );
 }
