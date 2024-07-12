@@ -15,8 +15,8 @@ function Chat({ className }) {
           />
         </div>
       </div>
-      <Messages style={{ width: "min(1000px, 70%)" }} className=" flex-grow" />
-      <SentBtn style={{ width: "min(1000px, 70%)" }} className=" bg-gray-500/10 mb-4" />
+      <Messages style={{ width: "min(1000px, 97%)" }} className=" flex-grow" />
+      <SentBtn style={{ width: "min(1000px, 97%)" }} className=" bg-gray-500/10 mb-4" />
     </div>
   );
 }
