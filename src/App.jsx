@@ -3,7 +3,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="bg-gray-900 relative w-screen h-screen">
+    <div className="bg-gray-900 relative w-screen h-full">
       <Outlet />
     </div>
   );
