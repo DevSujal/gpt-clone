@@ -1,10 +1,9 @@
 import { Outlet } from "react-router-dom";
 import "./App.css";
-import { Form } from "./pages";
 
 function App() {
   return (
-    <div className="bg-gray-900 w-screen h-screen">
+    <div className="bg-gray-900 relative w-screen h-screen">
       <Outlet />
     </div>
   );
