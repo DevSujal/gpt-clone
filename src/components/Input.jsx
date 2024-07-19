@@ -1,18 +1,34 @@
-import React, { forwardRef, useId } from "react";
+import React, {useEffect, useId, useRef } from "react";
 
 function Input({
   type = "text",
   placeholder,
   label,
   className = "",
+  inputVal,
+  setInputVal,
+  handleKeyPress,
   ...props
-}, ref) {
+}) {
   const id = useId();
+
+  const inputRef = useRef(null);
+  useEffect(() => {
+    const currentRef = inputRef.current;
+    currentRef?.addEventListener("keypress", handleKeyPress);
+
+    return () => {
+      currentRef?.removeEventListener("keypress", handleKeyPress);
+    };
+  }, [inputVal]);
+
   return (
     <input
-    ref={ref}
+      ref={inputRef}
       id={id}
-      className={` p-3 rounded flex justify-center items-start ${className}`}
+      value={inputVal}
+      onChange={(e) => setInputVal(e.target.value)}
+      className={`p-3 rounded flex justify-center items-start text-white ${className}`}
       type={type}
       placeholder={placeholder}
       name={`${label}`}
@@ -21,4 +37,4 @@ function Input({
   );
 }
 
-export default forwardRef(Input);
+export default Input;

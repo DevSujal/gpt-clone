@@ -9,43 +9,7 @@ function Message({ className }) {
     responce : "i don't know what you want to know",
   });
   return (
-    <div>
-
-    <div
-      className={`flex flex-row-reverse w-full p-2 gap-5 ${className}`}
-      >
-      <div>
-        <img
-          src={logo}
-          alt="profile img"
-          className="object-cover rounded-full"
-          width={40}
-          />
-      </div>
-      <div className="flex justify-end items-center space-y-3 sm:w-8/12 w-10/12">
-        <p className=" text-sm p-2 max-w-max text-white bg-gray-500/10 rounded-s-lg rounded-ee-lg font-semibold">
-           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo recusandae possimus incidunt excepturi quos earum. Amet consequuntur voluptatem provident expedita eius neque modi reprehenderit veniam dolorum dolores, commodi libero saepe?  
-        </p>
-      </div>
-    </div>
-    <div
-      className={`flex flex-row p-2 gap-5 ${className}`}
-    >
-      <div>
-        <img
-          src={chat.img}
-          alt="profile img"
-          className="object-cover rounded-full"
-          width={40}
-          />
-      </div>
-      <div className="flex items-center space-y-3 sm:w-8/12 w-10/12 ">
-        <p className=" text-sm p-2 max-w-max text-white bg-gray-500/10 rounded-es-lg rounded-e-lg font-semibold">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim deleniti unde, cupiditate tempore molestiae ullam illum fugiat, amet numquam saepe, nemo magni soluta adipisci quo aliquam in id nulla! Totam!
-        </p>
-      </div>
-    </div>
-          </div>
+    <></>
   );
 }
 
